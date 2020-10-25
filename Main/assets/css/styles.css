@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(7, 145, 145);
+  font-family: sans-serif, Arial;
+  font-size: 200%;
+}
+button {
+  background-color: #25d342;
+  font-size: 100%;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 5px 50px;
+  color: white;
+}
+
+button:hover {
+  background-color: #c0190d;
+}
+
+/*.choices button {
+  display: block; this does keep the choices inline 
+}*/
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+}
+
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+}
+
+.scores {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.feedback {
+  font-size: 400%;
+  margin-top: 20px;
+  padding-top: 70px;
+  color: rgb(106, 255, 0);
+}
+
+.timer {
+  font-size: 100%;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  
+}
+.p {
+  color: white;
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Quiz</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <a href="highscores.html"><button> High Scores</button></a>
+    <!-- I googled how to combine a href and a button -- https://stackoverflow.com/questions/3341011/making-a-button-thats-a-link-in-html-->
+    <button class="timer">Timer: <span id="time">0</span></button>
+
+    <div class="wrapper">
+      <div id="start-screen" class="start">
+        <h1>Computer Coding Quiz</h1>
+        <p>
+          Answer the following questions, IF YOU DARE!
+          You have 75 seconds to answer 5 questions. For each question you get wrong, 10 seconds 
+          will be deducted. However much time you have left at the end will be your score
+        </p>
+
+        <p>Click Start Quiz to begin</p>
+        <button id="start">Start Quiz</button>
+      </div>
+
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h1>End of Quiz</h1>
+        <p>Your score is <span id="final-score"></span></p>
+        <p>
+          Enter your initials <input type="text" id="initials"/>
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
+  </body>
+</html>
